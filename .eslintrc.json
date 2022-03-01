@@ -6,7 +6,7 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -16,23 +16,57 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "rules": {
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "default-param-last": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
       {
+        "js": "never",
+        "jsx": "never",
         "ts": "never",
         "tsx": "never"
       }
-    ]
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
-    }
+    ],
+    "react/function-component-definition": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "react/destructuring-assignment": "off"
   }
 }

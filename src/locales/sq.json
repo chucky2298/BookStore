@@ -1,0 +1,26 @@
+{
+  "globals": {
+    "save": "Ruaj",
+    "english": "Anglisht",
+    "albanian": "Shqip",
+    "required": "Fushë e detyrueshme"
+  },
+  "routes": {
+    "logIn": "Hyr",
+    "logOut": "Dil",
+    "authors": "Llogaritë",
+    "settings": "Opsionet"
+  },
+  "notFound": {
+    "pageNotFound": "Faqja që kërkuat nuk u gjet",
+    "goBack": "Klikoni këtu për tu kthyer mbrapa"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Fjalëkalimi",
+    "logIn": "Hyr",
+    "invalidEmail": "Format i gabuar email-i",
+    "invalidPassword": "Format i gabuar i fjalëkalimit",
+    "loggingOut": "Ju lutemi prisni..."
+  }
+}
